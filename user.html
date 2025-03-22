@@ -1,0 +1,262 @@
+<html lang="en">
+
+<head>
+	<title>Bhagyoday Enterprises - User</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="plugins/css/style.css">
+	<link rel="stylesheet" href="plugins/css/styleinternal.css">
+
+	<!-- /// Responsive Table ///  -->
+	<link rel="stylesheet" href="plugins/css/bootstrap.min.css">
+	<link rel="stylesheet" href="plugins/css/responsiveTable/css/dataTables.bootstrap5.min.css">
+	<!-- /// Responsive Table End ///  -->
+
+</head>
+
+<body>
+
+	<div class="wrapper d-flex align-items-stretch">
+		<!-- ====================================================================== -->
+		<!-- SIDEBAR -->
+		<!-- ====================================================================== -->
+		<nav id="sidebar">
+			<div class="custom-menu">
+				<button type="button" id="sidebarCollapse" class="btn btn-primary">
+					<i class="fa fa-bars"></i>
+					<span class="sr-only">Toggle Menu</span>
+				</button>
+			</div>
+
+			<div class="p-4">
+				<h1><a href="index.html" class="logo logo-font">Bhagyoday</a></h1>
+
+				<ul class="list-unstyled components mb-5">
+					<li>
+						<a href="index.html"><span class="fa fa-home mr-3"></span> Home</a>
+					</li>
+					<li class="active">
+						<a href="user.html"><span class="fa fa-user mr-3"></span> User</a>
+					</li>
+
+					<li>
+						<a href="#submenu2" data-toggle="collapse" aria-expanded="false">
+							<div class="d-flex w-100 justify-content-start align-items-center">
+								<span class="fa fa-briefcase mr-3"></span>
+								<span class="menu-collapsed" style="margin-right: 6em;">Business</span>
+								<span class="fa fa-caret-down"></span>
+							</div>
+						</a>
+						<!-- Submenu content -->
+						<div id='submenu2' style="margin-left: 3em;" class="collapse sidebar-submenu">
+							<a href="stripLamination.html" class="">
+								<span class="menu-collapsed">Strip Lamination</span>
+							</a>
+							<a href="paperLamination.html" class="">
+								<span class="menu-collapsed">Paper Lamination</span>
+							</a>
+						</div>
+					</li>
+
+					<li>
+						<a href="#"><span class="fa fa-sticky-note mr-3"></span> Blog</a>
+					</li>
+					<li>
+						<a href="#"><span class="fa fa-paper-plane mr-3"></span> Contact</a>
+					</li>
+					<li>
+						<a href="blank.html"><span class="fa fa-sticky-note mr-3"></span> Blank</a>
+					</li>
+					<li>
+						<a href="zTestPage.html"><span class="fa fa-paper-plane mr-3"></span> Test Page</a>
+					</li>
+				</ul>
+
+				<div class="footer">
+					<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						Copyright &copy;
+						<script>document.write(new Date().getFullYear());</script> All Rights Reserved | Powered by
+						Bhagyoday
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					</p>
+				</div>
+			</div>
+		</nav>
+		<!-- ====================================================================== -->
+		<!-- SIDEBAR END -->
+		<!-- ====================================================================== -->
+
+		<!-- ================================================================================================================================================================================================================== -->
+
+		<!-- ====================================================================== -->
+		<!-- PAGE CONTENT -->
+		<!-- ====================================================================== -->
+		<div id="content" class="p-4 p-md-5 pt-5">
+
+			<!-- ====================================================================== -->
+			<!-- PAGE HEADING -->
+			<!-- ====================================================================== -->
+			<h2 class="mb-4"><span class="fa fa-user mr-3"></span>&nbsp;Users</h2>
+			<hr class="hrheading">
+			<!-- ====================================================================== -->
+			<!-- PAGE HEADING END -->
+			<!-- ====================================================================== -->
+
+			<button id="addUser" type="button" class="btn btn-primary btn-sm" style="float: right;" data-toggle="modal"
+				data-target="addUserModal" onclick="AddUser()">
+				<i class="fa fa-plus"></i> Add User
+			</button>
+			<!-- <input class="form-control" type="text" placeholder="Default input"> -->
+
+			<!-- TABLE CODE -->
+			<div>
+				<!-- Start DEMO HTML (Use the following code into your project)-->
+				<table id="resptable" class="table table-striped" style="width:100%">
+					<thead>
+						<tr style="line-height: 8px;">
+							<th>Name</th>
+							<th>Position</th>
+							<th>Office</th>
+							<th>Age</th>
+							<th>Start date</th>
+							<th>Salary</th>
+							<th>Details</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr style="line-height: 8px;">
+							<td>Finn Camacho</td>
+							<td>Support Engineer</td>
+							<td>San Francisco</td>
+							<td>47</td>
+							<td>2009-07-07</td>
+							<td>$87,500</td>
+							<td class="tableiconcss"><i class="fa fa-pencil tableiconpadding"
+									onclick="SheetsEdit(0)"></i><i class="fa fa-trash" onclick="SheetsDelete(0)"></i>
+							</td>
+						</tr>
+						<tr style="line-height: 8px;">
+							<td>Finn Camacho</td>
+							<td>Support Engineer</td>
+							<td>San Francisco</td>
+							<td>47</td>
+							<td>2009-07-07</td>
+							<td>$87,500</td>
+							<td class="tableiconcss"><i class="fa fa-pencil tableiconpadding"
+									onclick="SheetsEdit(0)"></i><i class="fa fa-trash" onclick="SheetsDelete(0)"></i>
+							</td>
+						</tr>
+						<tr style="line-height: 8px;">
+							<td>Finn Camacho</td>
+							<td>Support Engineer</td>
+							<td>San Francisco</td>
+							<td>47</td>
+							<td>2009-07-07</td>
+							<td>$87,500</td>
+							<td class="tableiconcss"><i class="fa fa-pencil tableiconpadding"
+									onclick="SheetsEdit(0)"></i><i class="fa fa-trash" onclick="SheetsDelete(0)"></i>
+							</td>
+						</tr>
+
+					</tbody>
+
+				</table>
+				<!-- END EDMO HTML (Happy Coding!)-->
+			</div>
+			<!-- TABLE CODE END -->
+
+
+		</div>
+		<!-- ====================================================================== -->
+		<!-- PAGE CONTENT END -->
+		<!-- ====================================================================== -->
+
+
+		<!-- ====================================================================== -->
+		<!-- PAGE MODEL -->
+		<!-- ====================================================================== -->
+
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
+			<!-- Modal content -->
+			<div class="modal-content" style="width: 40%;margin-top: -2em;">
+				<span class="close model-close" style="margin-left: 20em;margin-bottom: -1em;">&times;</span>
+				<h4>Add User</h4>
+				<hr class="model-hr">
+				<form class="row g-3">
+					<div class="col-12 model-col-margin">
+						<label for="inputUserName" class="form-label">User Name</label>
+						<input type="text" class="form-control" id="inputUserName" placeholder="Enter name">
+					</div>
+
+					<div class="col-md-6 model-col-margin">
+						<label for="inputContact" class="form-label">Contact Number</label>
+						<input type="text" class="form-control" id="inputContact" placeholder="Enter Contact Number">
+					</div>
+					<div class="col-md-6 model-col-margin">
+						<label for="inputCity" class="form-label">City</label>
+						<input type="text" class="form-control" id="inputCity" placeholder="Enter City">
+					</div>
+
+					<div class="col-12 model-col-margin">
+						<label for="inputAddress" class="form-label">Address</label>
+						<input type="text" class="form-control" id="inputAddress" placeholder="Enter Address">
+					</div>
+
+					<div class="col-md-6 model-col-margin">
+						<label for="selectPersonType" class="form-label">Person Type</label><br>
+						<select id="selectPersonType" class="form-control" onchange="SelectPersonType()">
+							<option value="0">Select Type</option>
+							<option value="1">Owner</option>
+							<option value="2">Transportar</option>
+							<option value="3">Other</option>
+						</select>
+					</div>
+					<div class="col-md-6 model-col-margin">
+						<label for="selectPersonType" class="form-label">Business Type</label><br>
+						<select id="selectPersonType" class="form-control" onchange="SelectPersonType()">
+							<option value="0">Business Type</option>
+							<option value="1">Lotus</option>
+							<option value="2">KM</option>
+							<option value="3">Sunrise</option>
+						</select>
+					</div>
+
+					<div class="col-12">
+						<button type="submit" style="margin-bottom: -1em;" class="btn btn-primary">Add User</button>
+					</div>
+				</form>
+
+			</div>
+		</div>
+
+		<!-- ====================================================================== -->
+		<!-- END PAGE MODEL -->
+		<!-- ====================================================================== -->
+	</div>
+
+	<script src="plugins/js/jquery.min.js"></script>
+	<script src="plugins/js/popper.js"></script>
+	<script src="plugins/js/bootstrap.min.js"></script>
+	<script src="plugins/js/bootstrap.bundle.min.js"></script>
+	<script src="plugins/js/main.js"></script>
+	<script src="script/common.js"></script>
+
+
+	<!-- For Table -->
+	<script src="plugins/css/responsiveTable/js/jquery.dataTables.min.js"></script>
+	<script src="plugins/css/responsiveTable/js/dataTables.responsive.min.js"></script>
+	<script src='plugins/css/responsiveTable/js/dataTables.bootstrap5.min.js'></script>
+	<script src="plugins/css/responsiveTable/js/tableScript.js"></script>
+	<!-- For Table End -->
+
+	<!-- Page Script -->
+	<script src="script/user.js"></script>
+	<!-- Page Script End -->
+
+</body>
+
+</html>

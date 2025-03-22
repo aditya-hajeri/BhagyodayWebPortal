@@ -1,0 +1,606 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Bhagyoday Enterprises - Strip Lamination</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- This CDN used for showing Info icon only in table -->
+	<link rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+	<!-- END This CDN used for showing Info icon only in table -->
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="plugins/css/style.css">
+	<link rel="stylesheet" href="plugins/css/styleinternal.css">
+
+	<!-- /// Responsive Table ///  -->
+	<link rel="stylesheet" href="plugins/css/responsiveTable/css/dataTables.bootstrap5.min.css">
+	<link rel="stylesheet" href="plugins/css/bootstrap.min.css">
+	<!-- /// Responsive Table End ///  -->
+
+	<!-- Counter CSS -->
+	<link rel="stylesheet" href="plugins/css/counter/counter.css">
+	<!-- Counter CSS End -->
+
+</head>
+
+<body>
+
+	<div class="wrapper d-flex align-items-stretch">
+
+		<!-- ====================================================================== -->
+		<!-- SIDEBAR -->
+		<!-- ====================================================================== -->
+		<nav id="sidebar">
+			<div class="custom-menu">
+				<button type="button" id="sidebarCollapse" class="btn btn-primary">
+					<i class="fa fa-bars"></i>
+					<span class="sr-only">Toggle Menu</span>
+				</button>
+			</div>
+
+			<div class="p-4">
+				<h1><a href="index.html" class="logo logo-font">Bhagyoday</a></h1>
+
+				<ul class="list-unstyled components mb-5">
+					<li>
+						<a href="index.html"><span class="fa fa-home mr-3"></span> Home</a>
+					</li>
+					<li>
+						<a href="user.html"><span class="fa fa-user mr-3"></span> User</a>
+					</li>
+
+					<li>
+						<a href="#submenu2" data-toggle="collapse" aria-expanded="false">
+							<div class="d-flex w-100 justify-content-start align-items-center">
+								<span class="fa fa-briefcase mr-3"></span>
+								<span class="menu-collapsed" style="margin-right: 6em;">Business</span>
+								<span class="fa fa-caret-down"></span>
+							</div>
+						</a>
+						<!-- Submenu content -->
+						<div id='submenu2' style="margin-left: 3em;" class="collapse sidebar-submenu">
+							<a href="stripLamination.html" class="">
+								<span class="menu-collapsed">Strip Lamination</span>
+							</a>
+							<a href="paperLamination.html" class="">
+								<span class="menu-collapsed">Paper Lamination</span>
+							</a>
+						</div>
+					</li>
+
+					<li>
+						<a href="#"><span class="fa fa-sticky-note mr-3"></span> Blog</a>
+					</li>
+					<li>
+						<a href="#"><span class="fa fa-paper-plane mr-3"></span> Contact</a>
+					</li>
+					<li>
+						<a href="blank.html"><span class="fa fa-sticky-note mr-3"></span> Blank</a>
+					</li>
+					<li>
+						<a href="zTestPage.html"><span class="fa fa-paper-plane mr-3"></span> Test Page</a>
+					</li>
+				</ul>
+
+				<div class="footer">
+					<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						Copyright &copy;
+						<script>document.write(new Date().getFullYear());</script> All Rights Reserved | Powered by
+						Bhagyoday
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					</p>
+				</div>
+			</div>
+		</nav>
+		<!-- ====================================================================== -->
+		<!-- SIDEBAR END -->
+		<!-- ====================================================================== -->
+
+		<!-- ================================================================================================================================================================================================================== -->
+
+		<!-- ====================================================================== -->
+		<!-- PAGE CONTENT -->
+		<!-- ====================================================================== -->
+		<div id="maincontent" class="p-4 p-md-5 pt-5">
+			<!-- ====================================================================== -->
+			<!-- PAGE HEADING -->
+			<!-- ====================================================================== -->
+			<h2 class="mb-4"><span class="fa fa-briefcase mr-3"></span>Business / Strip Lamination</h2>
+			<hr class="hrheading">
+			<!-- ====================================================================== -->
+			<!-- PAGE HEADING -->
+			<!-- ====================================================================== -->
+
+			<!-- HOZRINTAL TAB -->
+			<div id="hozrintaltab">
+				<nav>
+					<div class="nav nav-tabs" id="nav-tab" role="tablist">
+						<button class="nav-link active" id="nav-sheetsinstock-tab" data-bs-toggle="tab"
+							data-bs-target="#nav-sheetsinstock" type="button" role="tab"
+							aria-controls="nav-sheetsinstock" aria-selected="true">Sheets In Stock</button>
+						<button class="nav-link" id="nav-sheetsarival-tab" data-bs-toggle="tab"
+							data-bs-target="#nav-sheetsarival" type="button" role="tab" aria-controls="nav-sheetsarival"
+							aria-selected="false">Add Sheets</button>
+						<button class="nav-link" id="nav-sheetsdelivered-tab" data-bs-toggle="tab"
+							data-bs-target="#nav-sheetsdelivered" type="button" role="tab"
+							aria-controls="nav-sheetsdelivered" aria-selected="false">Sheets
+							Delivered</button>
+						<button class="nav-link" id="nav-sheetsbill-tab" data-bs-toggle="tab"
+							data-bs-target="#nav-sheetsbill" type="button" role="tab" aria-controls="nav-sheetsbill"
+							aria-selected="false">Creat Sheets
+							Bill</button>
+						<button class="nav-link" id="nav-disabled-tab" data-bs-toggle="tab"
+							data-bs-target="#nav-disabled" type="button" role="tab" aria-controls="nav-disabled"
+							aria-selected="false" disabled>Disabled</button>
+					</div>
+				</nav>
+				<div class="tab-content" id="nav-tabContent">
+					<!-- ============================================= -->
+					<!-- ===== TAB 1 ===== -->
+					<!-- ============================================= -->
+					<div class="tab-pane fade" id="nav-sheetsinstock" role="tabpanel"
+						aria-labelledby="nav-sheetsinstock-tab" tabindex="0">
+
+						<!-- === Counter === -->
+						<div class="row mt-3">
+							<div class="col-md-3 col-sm-6">
+								<div class="counter purple">
+									<div class="counter-icon">
+										<i class="fa fa-globe"></i>
+									</div>
+									<span class="counter-value">1963</span>
+									<h3>Sheets In Stock</h3>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="counter">
+									<div class="counter-icon">
+										<i class="fa fa-rocket"></i>
+									</div>
+									<span class="counter-value">1854</span>
+									<h3>Pending Sheets</h3>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="counter green">
+									<div class="counter-icon">
+										<i class="fa fa-briefcase"></i>
+									</div>
+									<span class="counter-value">1854</span>
+									<h3>Ready Sheets</h3>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="counter blue">
+									<div class="counter-icon">
+										<i class="fa fa-mobile"></i>
+									</div>
+									<span class="counter-value">1854</span>
+									<h3>Total Laminatated</h3>
+								</div>
+							</div>
+						</div>
+						<!-- === End Counter === -->
+
+						<div class="row mt-3 hozrintal-container-p-m-w">
+
+							<div class="col-md-3 int-card-width card"
+								style="margin: 1%;box-shadow: 5px 5px 5px #494ca278;">
+								<h5 class="card-heading">Party Name</h5>
+								<hr>
+								<div class="card-body" style="padding: unset;">
+									<div class="row col-md-12">
+										<p>Pending Sheets: 2000</p>
+									</div>
+									<div class="row col-md-12">
+										<p>Ready Sheets: 2000</p>
+									</div>
+									<button id="seemore0" style="margin-bottom: 7%;" type="button"
+										class="btn btn-primary btn-sm" onclick="ShowMore(0)">
+										See more...
+									</button>
+								</div>
+							</div>
+
+							<div class="col-md-3 int-card-width card"
+								style="margin: 1%;box-shadow: 5px 5px 5px #494ca278;">
+								<h5 class="card-heading">Party Name</h5>
+								<hr>
+								<div class="card-body" style="padding: unset;">
+									<div class="row col-md-12">
+										<p>Pending Sheets: 2000</p>
+									</div>
+									<div class="row col-md-12">
+										<p>Ready Sheets: 2000</p>
+									</div>
+									<button style="margin-bottom: 7%;" type="button" class="btn btn-primary btn-sm"
+										onclick="ShowMore(0)">
+										See more...
+									</button>
+								</div>
+							</div>
+
+							<div class="col-md-3 int-card-width card"
+								style="margin: 1%;box-shadow: 5px 5px 5px #494ca278;">
+								<h5 class="card-heading">Party Name</h5>
+								<hr>
+								<div class="card-body" style="padding: unset;">
+									<div class="row col-md-12">
+										<p>Pending Sheets: 2000</p>
+									</div>
+									<div class="row col-md-12">
+										<p>Ready Sheets: 2000</p>
+									</div>
+									<button style="margin-bottom: 7%;" type="button" class="btn btn-primary btn-sm"
+										onclick="ShowMore(0)">
+										See more...
+									</button>
+								</div>
+							</div>
+
+							<div class="col-md-3 int-card-width card"
+								style="margin: 1%;box-shadow: 5px 5px 5px #494ca278;">
+								<h5 class="card-heading">Party Name</h5>
+								<hr>
+								<div class="card-body" style="padding: unset;">
+									<div class="row col-md-12">
+										<p>Pending Sheets: 2000</p>
+									</div>
+									<div class="row col-md-12">
+										<p>Ready Sheets: 2000</p>
+									</div>
+									<button style="margin-bottom: 7%;" type="button" class="btn btn-primary btn-sm"
+										onclick="ShowMore(0)">
+										See more...
+									</button>
+								</div>
+							</div>
+
+							<div class="col-md-3 int-card-width card"
+								style="margin: 1%;box-shadow: 5px 5px 5px #494ca278;">
+								<h5 class="card-heading">Party Name</h5>
+								<hr>
+								<div class="card-body" style="padding: unset;">
+									<div class="row col-md-12">
+										<p>Pending Sheets: 2000</p>
+									</div>
+									<div class="row col-md-12">
+										<p>Ready Sheets: 2000</p>
+									</div>
+									<button style="margin-bottom: 7%;" type="button" class="btn btn-primary btn-sm"
+										onclick="ShowMore(0)">
+										See more...
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ============================================= -->
+					<!-- ===== END TAB 1 ===== -->
+					<!-- ============================================= -->
+
+					<!-- ============================================= -->
+					<!-- ===== TAB 2 ===== -->
+					<!-- ============================================= -->
+					<div class="mt-3 tab-pane fade show active" id="nav-sheetsarival" role="tabpanel"
+						aria-labelledby="nav-sheetsarival-tab" tabindex="0">
+						<button id="addSheets" type="button" class="btn btn-primary btn-sm" style="float: right;"
+							data-toggle="modal" data-target="addSheetsdetailsModel" onclick="AddSheets()">
+							<i class="fa fa-plus"></i> Add Sheets
+						</button>
+						<!-- TABLE CODE -->
+						<div>
+							<!-- Start DEMO HTML (Use the following code into your project)-->
+							<table id="resptable" class="table table-striped" style="width:100%">
+								<thead>
+									<tr style="line-height: 8px;">
+										<th>Party Name</th>
+										<th>Lot Date</th>
+										<th>Designs</th>
+										<th>Total Sheets</th>
+										<th>Pending Sheets</th>
+										<th>Ready Sheets</th>
+										<th>Details</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr style="line-height: 8px;">
+										<td>Lotus</td>
+										<td>2023-12-15</td>
+										<td>9</td>
+										<td>50,000</td>
+										<td>20000</td>
+										<td>30000</td>
+										<td class="tableiconcss"><i class="fa fa-circle-info tableiconpadding"
+												onclick="SheetsDetails(0)"></i><i class="fa fa-pencil tableiconpadding"
+												onclick="SheetsEdit(0)"></i><i class="fa fa-trash"
+												onclick="SheetsDelete(0)"></i>
+										</td>
+									</tr>
+									<tr style="line-height: 8px;">
+										<td>KM</td>
+										<td>2023-12-20</td>
+										<td>6</td>
+										<td>30,000</td>
+										<td>10000</td>
+										<td>20000</td>
+										<td class="tableiconcss"><i class="fa fa-circle-info tableiconpadding"
+												onclick="SheetsDetails(0)"></i><i class="fa fa-pencil tableiconpadding"
+												onclick="SheetsEdit(0)"></i><i class="fa fa-trash"
+												onclick="SheetsDelete(0)"></i>
+										</td>
+									</tr>
+									<tr style="line-height: 8px;">
+										<td>Sunrise</td>
+										<td>2023-11-20</td>
+										<td>5</td>
+										<td>40,000</td>
+										<td>20000</td>
+										<td>20000</td>
+										<td class="tableiconcss"><i class="fa fa-circle-info tableiconpadding"
+												onclick="SheetsDetails(0)"></i><i class="fa fa-pencil tableiconpadding"
+												onclick="SheetsEdit(0)"></i><i class="fa fa-trash"
+												onclick="SheetsDelete(0)"></i>
+										</td>
+									</tr>
+
+								</tbody>
+
+							</table>
+							<!-- END EDMO HTML (Happy Coding!)-->
+						</div>
+						<!-- TABLE CODE END -->
+					</div>
+					<!-- ============================================= -->
+					<!-- ===== END TAB 2 ===== -->
+					<!-- ============================================= -->
+
+					<!-- ============================================= -->
+					<!-- ===== TAB 3 ===== -->
+					<!-- ============================================= -->
+					<div class="tab-pane fade" id="nav-sheetsdelivered" role="tabpanel"
+						aria-labelledby="nav-sheetsdelivered-tab" tabindex="0">TAB 3</div>
+					<!-- ============================================= -->
+					<!-- ===== END TAB 3 ===== -->
+					<!-- ============================================= -->
+
+					<!-- ============================================= -->
+					<!-- ===== TAB 4 ===== -->
+					<!-- ============================================= -->
+					<div class="tab-pane fade" id="nav-sheetsbill" role="tabpanel" aria-labelledby="nav-sheetsbill-tab"
+						tabindex="0">TAB 4</div>
+					<!-- ============================================= -->
+					<!-- ===== END TAB 4 ===== -->
+					<!-- ============================================= -->
+
+					<!-- ============================================= -->
+					<!-- ===== TAB 5 ===== -->
+					<!-- ============================================= -->
+					<div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab"
+						tabindex="0">TAB 5</div>
+					<!-- ============================================= -->
+					<!-- ===== END TAB 5 ===== -->
+					<!-- ============================================= -->
+
+				</div>
+			</div>
+			<!-- HOZRINTAL TAB END -->
+
+		</div>
+		<!-- ====================================================================== -->
+		<!-- PAGE CONTENT END -->
+		<!-- ====================================================================== -->
+
+		<!-- ====================================================================== -->
+		<!-- PAGE MODEL -->
+		<!-- ====================================================================== -->
+
+		<!-- === MODEL PARTY DETAILS  -->
+		<div id="showsheetdetailsModal" class="modal">
+			<!-- Modal content -->
+			<div class="modal-content" style="width: 40%;margin-top: -2em;">
+				<span onclick="closeModel()" class="close model-close"
+					style="margin-left: 20em;margin-bottom: -1em;">&times;</span>
+				<h4>Party Name - Lotus</h4>
+				<hr class="model-hr">
+				<div class="btn btn-primary">
+					<label href="#" class="floatleft">First Lot</label>
+					<label href="#" class="floatright">Total: 8000</label>
+				</div>
+
+				<div class="row m-0 mt-2">
+					<div class="col-md-6 cardformodel">
+						<div class="cardheadingmodel greenheading">
+							<label class="fontcolorweight">Ready Sheets</label>
+							<label id="modelReadySheetsCount" class="fontcolorweight" for="sheetCount"
+								style="float: right !important;">5000</label>
+						</div>
+						<div class="card-body" style="padding: unset;">
+							<div class="row col-md-12">
+								<p>Sheet Name: 3000</p>
+							</div>
+							<div class="row col-md-12">
+								<p>Sheet Name: 2000</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 cardformodel">
+						<div class="cardheadingmodel redheading">
+							<label class="fontcolorweight">Pending Sheets</label>
+							<label id="modelReadySheetsCount" class="fontcolorweight" for="sheetCount"
+								style="float: right !important;">3000</label>
+						</div>
+						<div class="card-body" style="padding: unset;">
+							<div class="row col-md-12">
+								<p>Sheet Name: 1000</p>
+							</div>
+							<div class="row col-md-12">
+								<p>Sheet Name: 2000</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!-- === END MODEL PARTY DETAILS  -->
+
+		<!-- ================================================================================================================ -->
+
+		<!-- === MODEL ADD SHEETS DETAILS -->
+		<div id="addSheetsdetailsModel" class="modal">
+			<!-- Modal content -->
+			<div class="modal-content" style="width: 50%;margin-top: -2em;">
+				<div class="row">
+					<div class="col-12">
+						<h4>Add Sheets</h4>
+						<span onclick="closeModel()" class="close model-close"
+							style="margin-top: -1.8em;">&times;</span>
+					</div>
+				</div>
+				<hr class="model-hr">
+				<div class="row">
+					<form>
+						<div class="row g-3">
+							<div class="col-md-6">
+								<div class="row">
+	
+									<div class="col-md-6 model-col-margin">
+										<label for="addSelectPartyName" class="form-label">Party Name</label><br>
+										<select id="addSelectPartyName" class="form-control"
+											onchange="SelectPartyName(value)">
+											<option value="0">Select</option>
+											<option value="1">Lotus</option>
+											<option value="2">KM</option>
+											<option value="3">Sunrise</option>
+										</select>
+									</div>
+	
+									<div class="col-md-6 model-col-margin">
+										<label for="inputContact" class="form-label">Sheet Count</label>
+										<input type="text" class="form-control" id="inputContact"
+											placeholder="Enter Sheet Count">
+									</div>
+	
+									<div class="col-md-6 model-col-margin">
+										<label for="date" class="form-label">Date:</label>
+										<input type="date" id="date" class="form-control">
+									</div>
+									<div class="col-md-4 model-col-margin">
+										<label for="inputContact" class="form-label">Design Count</label>
+										<input type="text" class="form-control" id="inputContact" placeholder="Enter Count">
+									</div>
+									<div class="col-md-2 model-col-margin">
+										<button type="submit" class="btn btn-primary"
+											style="margin-top: 2em;margin-left: -1em;">+</button>
+									</div>
+	
+									<div class="col-12 model-col-margin">
+										<label for="inputAddress" class="form-label">Note</label>
+										<input type="text" class="form-control" id="inputAddress" placeholder="Add Note">
+									</div>
+	
+								</div>
+							</div>
+	
+							<div id="divHoldDesignCount" class="col-md-6" style="display: none;">
+								<div class="row g-3">
+									<div class="col-md-6 model-col-margin">
+										<select id="addSelectSheetName" class="form-control" onchange="SelectSheetName()">
+											<option value="0">Select Design</option>
+											<option value="1">Design Name 1</option>
+											<option value="2">Design Name 2</option>
+											<option value="3">Design Name 3</option>
+										</select>
+									</div>
+									<div class="col-md-6 model-col-margin">
+										<input type="text" class="form-control" id="inputContact"
+											placeholder="Design Count">
+									</div>
+									<div class="col-md-6 model-col-margin">
+										<select id="addSelectSheetName" class="form-control" onchange="SelectSheetName()">
+											<option value="0">Select Design</option>
+											<option value="1">Design Name 1</option>
+											<option value="2">Design Name 2</option>
+											<option value="3">Design Name 3</option>
+										</select>
+									</div>
+									<div class="col-md-6 model-col-margin">
+										<input type="text" class="form-control" id="inputContact"
+											placeholder="Design Count">
+									</div>
+									<div class="col-md-6 model-col-margin">
+										<select id="addSelectSheetName" class="form-control" onchange="SelectSheetName()">
+											<option value="0">Select Design</option>
+											<option value="1">Design Name 1</option>
+											<option value="2">Design Name 2</option>
+											<option value="3">Design Name 3</option>
+										</select>
+									</div>
+									<div class="col-md-6 model-col-margin">
+										<input type="text" class="form-control" id="inputContact"
+											placeholder="Design Count">
+									</div>
+									<div class="col-md-6 model-col-margin">
+										<select id="addSelectSheetName" class="form-control" onchange="SelectSheetName()">
+											<option value="0">Select Design</option>
+											<option value="1">Design Name 1</option>
+											<option value="2">Design Name 2</option>
+											<option value="3">Design Name 3</option>
+										</select>
+									</div>
+									<div class="col-md-6 model-col-margin">
+										<input type="text" class="form-control" id="inputContact"
+											placeholder="Design Count">
+									</div>
+								</div>
+							</div>
+						</div>	
+	
+						<div class="row g-3">
+							<div class="col-12">
+								<button type="submit" class="btn btn-primary">Submit</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				
+
+			</div>
+		</div>
+		<!-- === END MODEL ADD SHEETS DETAILS -->
+		<!-- ====================================================================== -->
+		<!-- END PAGE MODEL -->
+		<!-- ====================================================================== -->
+
+	</div>
+
+	<script src="plugins/js/jquery.min.js"></script>
+	<script src="plugins/js/popper.js"></script>
+	<script src="plugins/js/bootstrap.min.js"></script>
+	<script src="plugins/js/bootstrap.bundle.min.js"></script>
+	<script src="plugins/js/main.js"></script>
+	<script src="script/common.js"></script>
+
+	<!-- For Table -->
+	<script src="plugins/css/responsiveTable/js/jquery.dataTables.min.js"></script>
+	<script src="plugins/css/responsiveTable/js/dataTables.responsive.min.js"></script>
+	<script src='plugins/css/responsiveTable/js/dataTables.bootstrap5.min.js'></script>
+	<script src="plugins/css/responsiveTable/js/tableScript.js"></script>
+	<!-- For Table End -->
+
+	<!-- For Counter -->
+	<script src="plugins/css/counter/counter.js"></script>
+	<!-- For Counter End -->
+
+	<!-- Page Script -->
+	<script src="script/stripLamination.js"></script>
+	<!-- Page Script End -->
+
+</body>
+
+</html>

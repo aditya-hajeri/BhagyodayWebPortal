@@ -1,0 +1,30 @@
+<div id="popup-outside-page" data-theme="a">
+    <!-- This popup has its theme explicitly defined via data-theme="a"
+         because it has no parent from which to automatically inherit
+         its theme -->
+    <ul data-role="listview">
+        <li>Global Menu</li>
+        <li><a href="#demo-intro">Intro Page</a></li>
+        <li><a href="#other-page">Other Page</a></li>
+        <li><a href="#third-page">Third Page</a></li>
+    </ul>
+</div>
+<div id="other-page" data-role="page" data-url="other-page">
+    <div data-role="header">
+        <a href="#popup-outside-page" data-rel="popup">Menu</a>
+        <h1>Another Page</h1>
+    </div>
+    <div role="main" class="ui-content">
+        <p>This is another page that can be reached using the links in the global menu.</p>
+    </div>
+</div>
+<div id="third-page" data-role="page" data-url="third-page">
+    <div data-role="header">
+        <a href="#popup-outside-page" data-rel="popup">Menu</a>
+        <h1>Third Page</h1>
+    </div>
+    <div role="main" class="ui-content">
+        <p>This is a third page that can be reached using the links in the global menu.</p>
+    </div>
+</div>
+<script src="script/_addUser.js"></script>
